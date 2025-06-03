@@ -1,165 +1,147 @@
 <!DOCTYPE html>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<html lang="de">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2575.2">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; -webkit-text-stroke: #000000}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; -webkit-text-stroke: #000000; min-height: 14.0px}
-    span.s1 {font-kerning: none}
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>3D Druck Welt</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    header { background: #007bff; color: white; padding: 1rem; text-align: center; }
+    main { padding: 1rem; max-width: 1000px; margin: auto; }
+    .language-select { margin-bottom: 1rem; }
+    .product-list { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; }
+    .product { border: 1px solid #ddd; border-radius: 5px; padding: 0.5rem; width: 280px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    .product img, .product video { width: 100%; border-radius: 5px; }
+    @media (max-width: 600px) {
+      .product { width: 100%; }
+    }
   </style>
 </head>
 <body>
-<p class="p1"><span class="s1">&lt;html lang="de"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;head&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8" /&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1" /&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;title&gt;3D Druck Welt&lt;/title&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;style&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>body { font-family: Arial, sans-serif; margin: 0; padding: 0; }</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>header { background: #007bff; color: white; padding: 1rem; text-align: center; }</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>main { padding: 1rem; max-width: 1000px; margin: auto; }</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.language-select { margin-bottom: 1rem; }</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.product-list { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; }</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.product { border: 1px solid #ddd; border-radius: 5px; padding: 0.5rem; width: 280px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.product img, .product video { width: 100%; border-radius: 5px; }</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>@media (max-width: 600px) {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>.product { width: 100%; }</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/head&gt;</span></p>
-<p class="p1"><span class="s1">&lt;body&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;header&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;h1 id="welcome-text"&gt;Willkommen bei 3D Druck Welt!&lt;/h1&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div class="language-select"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;label for="lang"&gt;Sprache / Language:&lt;/label&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;select id="lang"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;option value="de" selected&gt;Deutsch&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;option value="en"&gt;English&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;option value="ru"&gt;Русский&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;option value="fr"&gt;Français&lt;/option&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/select&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/header&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;main&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div class="product-list" id="product-list"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;!-- Produkte werden hier eingefügt --&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/main&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;script&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const translations = {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>de: {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>welcome: "Willkommen bei 3D Druck Welt!",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>products: [</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>name: "Produkt 1",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>size: "Größe: 10x10x10 cm",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>price: "Preis: 30€",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>material: "Material: PLA",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>shipping: "Versandkosten: 5€",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>condition: "Zustand: Neu",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>description: "Beschreibung auf Deutsch.",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>photos: ["https://via.placeholder.com/280x180?text=Foto+1"],</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>videos: []</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>},</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// ... weitere Produkte</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>]</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>},</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>en: {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>welcome: "Welcome to 3D Print World!",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>products: [</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>name: "Product 1",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>size: "Size: 10x10x10 cm",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>price: "Price: €30",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>material: "Material: PLA",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>shipping: "Shipping: €5",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>condition: "Condition: New",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>description: "Description in English.",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>photos: ["https://via.placeholder.com/280x180?text=Photo+1"],</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>videos: []</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>]</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>},</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>ru: {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>welcome: "Добро пожаловать в 3D Печатный Мир!",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>products: [</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>name: "Продукт 1",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>size: "Размер: 10x10x10 см",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>price: "Цена: 30€",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>material: "Материал: PLA",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>shipping: "Стоимость доставки: 5€",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>condition: "Состояние: Новый",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>description: "Описание на русском.",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>photos: ["https://via.placeholder.com/280x180?text=Фото+1"],</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>videos: []</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>]</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>},</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>fr: {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>welcome: "Bienvenue dans le Monde de l'impression 3D!",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>products: [</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>name: "Produit 1",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>size: "Taille: 10x10x10 cm",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>price: "Prix: 30€",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>material: "Matériel: PLA",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>shipping: "Frais de port: 5€",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>condition: "État: Neuf",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>description: "Description en français.",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>photos: ["https://via.placeholder.com/280x180?text=Photo+1"],</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>videos: []</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>]</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>};</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const langSelect = document.getElementById("lang");</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const welcomeText = document.getElementById("welcome-text");</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const productList = document.getElementById("product-list");</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>function renderProducts(language) {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>productList.innerHTML = "";</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const prods = translations[language].products;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>prods.forEach(p =&gt; {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>const div = document.createElement("div");</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>div.className = "product";</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>div.innerHTML = `</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h3&gt;${p.name}&lt;/h3&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>${p.photos.map(url =&gt; `&lt;img src="${url}" alt="${p.name}"&gt;`).join("")}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>${p.videos.map(url =&gt; `&lt;video controls src="${url}"&gt;&lt;/video&gt;`).join("")}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p&gt;${p.size}&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p&gt;${p.price}&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p&gt;${p.material}&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p&gt;${p.shipping}&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p&gt;${p.condition}&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p&gt;${p.description}&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>`;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>productList.appendChild(div);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>});</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>function updateLanguage() {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const selectedLang = langSelect.value;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>welcomeText.textContent = translations[selectedLang].welcome;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>renderProducts(selectedLang);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>langSelect.addEventListener("change", updateLanguage);</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>// Initial render</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>updateLanguage();</span></p>
-<p class="p1"><span class="s1">&lt;/script&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;/body&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
+
+<header>
+  <h1 id="welcome-text">Willkommen bei 3D Druck Welt!</h1>
+  <div class="language-select">
+    <label for="lang">Sprache / Language:</label>
+    <select id="lang">
+      <option value="de" selected>Deutsch</option>
+      <option value="en">English</option>
+      <option value="ru">Русский</option>
+      <option value="fr">Français</option>
+    </select>
+  </div>
+</header>
+
+<main>
+  <div class="product-list" id="product-list">
+    </div>
+</main>
+
+<script>
+  const translations = {
+    de: {
+      welcome: "Willkommen bei 3D Druck Welt!",
+      products: [
+        {
+          name: "Produkt 1",
+          size: "Größe: 10x10x10 cm",
+          price: "Preis: 30€",
+          material: "Material: PLA",
+          shipping: "Versandkosten: 5€",
+          condition: "Zustand: Neu",
+          description: "Beschreibung auf Deutsch.",
+          photos: ["https://via.placeholder.com/280x180?text=Foto+1"],
+          videos: []
+        },
+        // ... weitere Produkte
+      ]
+    },
+    en: {
+      welcome: "Welcome to 3D Print World!",
+      products: [
+        {
+          name: "Product 1",
+          size: "Size: 10x10x10 cm",
+          price: "Price: €30",
+          material: "Material: PLA",
+          shipping: "Shipping: €5",
+          condition: "Condition: New",
+          description: "Description in English.",
+          photos: ["https://via.placeholder.com/280x180?text=Photo+1"],
+          videos: []
+        }
+      ]
+    },
+    ru: {
+      welcome: "Добро пожаловать в 3D Печатный Мир!",
+      products: [
+        {
+          name: "Продукт 1",
+          size: "Размер: 10x10x10 см",
+          price: "Цена: 30€",
+          material: "Материал: PLA",
+          shipping: "Стоимость доставки: 5€",
+          condition: "Состояние: Новый",
+          description: "Описание на русском.",
+          photos: ["https://via.placeholder.com/280x180?text=Фото+1"],
+          videos: []
+        }
+      ]
+    },
+    fr: {
+      welcome: "Bienvenue dans le Monde de l'impression 3D!",
+      products: [
+        {
+          name: "Produit 1",
+          size: "Taille: 10x10x10 cm",
+          price: "Prix: 30€",
+          material: "Matériel: PLA",
+          shipping: "Frais de port: 5€",
+          condition: "État: Neuf",
+          description: "Description en français.",
+          photos: ["https://via.placeholder.com/280x180?text=Photo+1"],
+          videos: []
+        }
+      ]
+    }
+  };
+
+  const langSelect = document.getElementById("lang");
+  const welcomeText = document.getElementById("welcome-text");
+  const productList = document.getElementById("product-list");
+
+  function renderProducts(language) {
+    productList.innerHTML = "";
+    const prods = translations[language].products;
+    prods.forEach(p => {
+      const div = document.createElement("div");
+      div.className = "product";
+      div.innerHTML = `
+        <h3>${p.name}</h3>
+        ${p.photos.map(url => `<img src="${url}" alt="${p.name}">`).join("")}
+        ${p.videos.map(url => `<video controls src="${url}"></video>`).join("")}
+        <p>${p.size}</p>
+        <p>${p.price}</p>
+        <p>${p.material}</p>
+        <p>${p.shipping}</p>
+        <p>${p.condition}</p>
+        <p>${p.description}</p>
+      `;
+      productList.appendChild(div);
+    });
+  }
+
+  function updateLanguage() {
+    const selectedLang = langSelect.value;
+    welcomeText.textContent = translations[selectedLang].welcome;
+    renderProducts(selectedLang);
+  }
+
+  langSelect.addEventListener("change", updateLanguage);
+
+  // Initial render
+  updateLanguage();
+</script>
+
 </body>
 </html>
